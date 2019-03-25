@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="ch.perellano.sample.SpikeGitHubReleaseFeature.main:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/ch_perellano_sample_SpikeGitHubReleaseFeature_main_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="ch.perellano.sample.SpikeGitHubReleaseFeature.main/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="ch.perellano.sample.SpikeGitHubReleaseFeature.main" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
