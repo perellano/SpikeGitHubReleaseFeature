@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'war'
+    id "com.github.breadmoirai.github-release" version "2.2.6"
 }
 
 group 'ch.perellano.sample'
@@ -15,4 +16,16 @@ repositories {
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     testCompile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+}
+
+githubRelease {
+    owner "perellano"
+    repo "SpikeGitHubReleaseFeature"
+    tagName "v1.0.1"
+    releaseName "v1.0.1"
+    token getProperty('github.token')
+    allowUploadToExisting true
+    overwrite true
+    FilenameFilter filter = { dir, filename -> filename.contains(".war") }
+    releaseAssets = jar.destinationDir.listFiles filter
 }
