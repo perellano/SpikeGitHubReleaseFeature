@@ -23,7 +23,7 @@ githubRelease {
     repo "SpikeGitHubReleaseFeature"
     tagName "v1.0.1"
     releaseName "v1.0.1"
-    token getProperty('github.token')
+    token getProperty('githubtoken')
     allowUploadToExisting true
     overwrite true
     FilenameFilter filter = { dir, filename -> filename.contains(".war") }

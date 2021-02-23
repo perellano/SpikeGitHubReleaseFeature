@@ -1,5 +1,6 @@
 package ch.perellano.sample;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -22,6 +23,7 @@ public class StringCatapultTest {
     }
 
     @Test
+    @Ignore
     public void validateHelloInBrowser(){
         System.setProperty("webdriver.chrome.driver","C:\\Users\\perellano\\Downloads\\chromedriver_win32 (4)\\chromedriver.exe");
         ChromeDriver driver = new ChromeDriver();
